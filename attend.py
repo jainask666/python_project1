@@ -37,7 +37,7 @@ def checkData(data):
         print("\n"+str(len(names)+1)+'\n'+'Present done')
         enterData(data)
 
-
+#decode QRcode        
 while True:
     _,frame = cap.read()
     decodedobject = pyzbar.decode(frame)
