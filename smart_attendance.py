@@ -7,7 +7,7 @@ f = open('studentnames.txt','r')
 lines = f.read().split("\n")
 print(lines)
 
-
+#encodeing QRcode
 for i in range(0,len(lines)):
     data = lines[i].encode()
     name = base64.b64encode(data)
